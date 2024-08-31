@@ -1,0 +1,194 @@
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_get_info (call)
+Time: 2024-08-31 15:38:26.694941
+Request method: GET
+Request URL: http://localhost:8080//info
+
+Response code: 200
+Response text: Welcome to Alaska!
+This is CRUD service for bears in alaska.
+CRUD routes presented with REST naming notation:
+
+POST			/bear - create
+GET			/bear - read all bears
+GET			/bear/:id - read specific bear
+PUT			/bear/:id - update specific bear
+DELETE			/bear - delete all bears
+DELETE			/bear/:id - delete specific bear
+
+Example of ber json: {"bear_type":"BLACK","bear_name":"mikhail","bear_age":17.5}.
+Available types for bears are: POLAR, BROWN, BLACK and GUMMY.
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_create_bear_polar (call)
+Time: 2024-08-31 15:38:26.710431
+Request method: POST
+Request URL: http://localhost:8080//bear
+
+Response code: 200
+Response text: 5
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_create_bear_brown (call)
+Time: 2024-08-31 15:38:26.792469
+Request method: POST
+Request URL: http://localhost:8080//bear
+
+Response code: 200
+Response text: 6
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_create_bear_black (call)
+Time: 2024-08-31 15:38:26.809868
+Request method: POST
+Request URL: http://localhost:8080//bear
+
+Response code: 200
+Response text: 7
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_create_bear_gummy (call)
+Time: 2024-08-31 15:38:26.825525
+Request method: POST
+Request URL: http://localhost:8080//bear
+
+Response code: 200
+Response text: 8
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_get_all_bears (call)
+Time: 2024-08-31 15:38:26.839806
+Request method: GET
+Request URL: http://localhost:8080//bear
+
+Response code: 200
+Response text: [{"bear_id":5,"bear_type":"POLAR","bear_name":"DIMA","bear_age":2.0},{"bear_id":6,"bear_type":"BROWN","bear_name":"VASYA","bear_age":10.5},{"bear_id":7,"bear_type":"BLACK","bear_name":"MIKHAIL","bear_age":17.5},{"bear_id":8,"bear_type":"UNKNOWN","bear_name":"EMPTY_NAME","bear_age":0.0}]
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_get_polar_bear (call)
+Time: 2024-08-31 15:38:26.856644
+Request method: GET
+Request URL: http://localhost:8080//bear/1
+
+Response code: 200
+Response text: EMPTY
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_get_brown_bear (call)
+Time: 2024-08-31 15:38:26.889661
+Request method: GET
+Request URL: http://localhost:8080//bear/2
+
+Response code: 200
+Response text: EMPTY
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_get_black_bear (call)
+Time: 2024-08-31 15:38:26.923393
+Request method: GET
+Request URL: http://localhost:8080//bear/3
+
+Response code: 200
+Response text: EMPTY
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_get_gummy_bear (call)
+Time: 2024-08-31 15:38:26.965921
+Request method: GET
+Request URL: http://localhost:8080//bear/4
+
+Response code: 200
+Response text: EMPTY
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_change_polar_bear (call)
+Time: 2024-08-31 15:38:26.980836
+Request method: PUT
+Request URL: http://localhost:8080//bear/1
+
+Response code: 500
+Response text: <html><body><h2>500 Internal Server Error</h2></body></html>
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_change_polar_bear (call)
+Time: 2024-08-31 15:38:26.998769
+Request method: GET
+Request URL: http://localhost:8080//bear/1
+
+Response code: 200
+Response text: EMPTY
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:27 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_delete_polar_bear (call)
+Time: 2024-08-31 15:38:27.016681
+Request method: DELETE
+Request URL: http://localhost:8080//bear/1
+
+Response code: 200
+Response text: OK
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:27 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
+
+-----
+Test: test/test_check_bears.py::Test_check_bears::test_delete_all_bears (call)
+Time: 2024-08-31 15:38:27.024223
+Request method: DELETE
+Request URL: http://localhost:8080//bear
+
+Response code: 200
+Response text: OK
+Response headers: {'Date': 'Sat, 31 Aug 2024 12:38:27 GMT', 'Content-Type': 'text/html;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Server': 'Jetty(9.4.z-SNAPSHOT)'}
+Response cookies: {}
+
+-----
